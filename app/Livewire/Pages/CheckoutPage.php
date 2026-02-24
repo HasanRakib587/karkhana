@@ -27,7 +27,7 @@ class CheckoutPage extends Component
 
     public $bkash_last_digits;
 
-    public $location_type;
+    public $location_type = 'inside_dhaka';
 
     public function mount()
     {

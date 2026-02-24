@@ -101,10 +101,11 @@
 
         <!-- Action Buttons -->
         <div class="d-flex flex-column flex-md-row gap-3">
-            <a href="{{ route('products.all') }}" class="btn btn-lg btn-outline-primary w-100 w-md-auto text-dark">
+            <a wire:navigate href="{{ route('products.all') }}"
+                class="btn btn-lg btn-outline-primary w-100 w-md-auto text-dark">
                 Go back shopping
             </a>
-            <a href="" class="btn btn-lg btn-primary w-100 w-md-auto text-light">
+            <a wire:navigate href="{{ route('my.orders') }}" class="btn btn-lg btn-primary w-100 w-md-auto text-light">
                 View My Orders
             </a>
         </div>

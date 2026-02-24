@@ -5,6 +5,7 @@ namespace App\Livewire\Pages;
 use App\Helpers\CartManagement;
 use App\Models\Category;
 use App\Models\Product;
+use Jantinnerezo\LivewireAlert\Facades\LivewireAlert;
 use Livewire\Attributes\Url;
 use Livewire\Component;
 use Livewire\WithPagination;
@@ -27,12 +28,13 @@ class ProductsPage extends Component
         $total_count = CartManagement::addItemToCart($product_id);
 
         $this->dispatch('update-cart-count', $total_count);
-        // LivewireAlert::title('Thank You !')
-        //     ->text('Your Item is Added to the Cart')
-        //     ->position('top-end')
-        //     ->timer(3000)
-        //     ->toast()
-        //     ->show();
+        LivewireAlert::title('Thank You !')
+            ->success()
+            ->text('Your Item is Added to the Cart')
+            ->position('top-start')
+            ->timer(3000)
+            ->toast()
+            ->show();
     }
 
     public function render()

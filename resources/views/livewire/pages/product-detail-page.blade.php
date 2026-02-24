@@ -54,20 +54,6 @@
                             </svg>
                         </a>
                     </div>
-
-                    {{-- <div class="d-flex mt-3">
-                        <h5 class="font-secondary fw-light px-2 text-center">
-                            Free Shipping on order $75+
-                        </h5>
-                        <div class="vr"></div>
-                        <h5 class="font-secondary fw-light px-2 text-center">
-                            Free Extended return 1/30
-                        </h5>
-                        <div class="vr"></div>
-                        <h5 class="font-secondary fw-light px-2 text-center">
-                            Ship to Home, Delivered in 2-4 business days
-                        </h5>
-                    </div> --}}
                 </div>
             </div>
 
@@ -116,14 +102,14 @@
             <div class="row py-5">
                 <div class="col-md-12 d-flex justify-content-between align-items-center">
                     <h1 class="font-primary fw-bold">You May Also Like</h1>
-                    <a type="button" class="px-3 swiper-next" href="">
+                    <button type="button" class="px-3 swiper-next border-0 bg-transparent text-primary">
                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"
                             class="flip-horizontal">
                             <path fill="none" stroke="currentColor"
                                 d="M8 5c0 .742-.733 1.85-1.475 2.78c-.954 1.2-2.094 2.247-3.401 3.046C2.144 11.425.956 12 0 12m0 0c.956 0 2.145.575 3.124 1.174c1.307.8 2.447 1.847 3.401 3.045C7.267 17.15 8 18.26 8 19m-8-7h24"
                                 stroke-width="1" />
                         </svg>
-                    </a>
+                    </button>
                 </div>
             </div>
 
@@ -142,7 +128,8 @@
                                 <p class="font-primary card-text">
                                     {{ Number::currency($products->price, 'BDT') }}
                                 </p>
-                                <button class="font-primary btn btn-outline-primary text-light">
+                                <button wire:click="addToCart({{ $products->id }})"
+                                    class="font-primary btn btn-outline-primary text-light">
                                     Add to Bag
                                 </button>
                             </div>
