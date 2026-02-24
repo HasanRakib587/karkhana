@@ -1,0 +1,21 @@
+.zoom-container {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+/* Zoom effect */
+.zoom-image {
+  transition: transform 0.6s ease, filter 0.4s ease;
+  cursor: pointer; /* fallback */
+}
+
+/* Scale on hover (optional) */
+.zoom-container:hover .zoom-image {
+  transform: scale(1.2);
+  filter: brightness(1.05);
+}
+
+// .zoom-container:hover {
+//   cursor: pointer;
+// }

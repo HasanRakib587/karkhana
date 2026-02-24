@@ -1,0 +1,37 @@
+.bg-image{
+    // width: 100vw;
+    // height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(.6);
+}
+
+.hero-video{
+  margin-bottom: 20rem;
+}
+
+.hero-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.flip-horizontal {
+    transform: scaleX(-1);
+}
+
+.logo {
+  position: relative;  
+  display: block;
+  margin: 0 auto;
+  transform-origin: center center;
+
+  img{
+    max-height: 50px;
+    width: 100%;
+  }
+}

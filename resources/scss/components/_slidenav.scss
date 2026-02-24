@@ -1,0 +1,7 @@
+@use '../global/colors' as c;
+
+.nav-link:hover{
+  /* Styles applied on hover */
+  color: #ccc; 
+  background-color: #555; 
+}

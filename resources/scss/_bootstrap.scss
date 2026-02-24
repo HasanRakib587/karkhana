@@ -1,0 +1,65 @@
+@use './global/colors' as colors;
+
+$primary:  colors.$primary;
+$secondary: colors.$secondary;
+
+$light: colors.$text-light;
+$dark: colors.$text-dark;
+
+//Avenir
+@font-face {
+    font-family: "Avenir";
+    src: url("../fonts/avenir_regular-webfont.woff2") format("woff2"),
+         url("../fonts/avenir_regular-webfont.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Avenir";
+    src: url("../fonts/avenir_light-webfont.woff2") format("woff2"),
+         url("../fonts/avenir_light-webfont.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("../fonts/avenir_heavy-webfont.woff2") format("woff2"),
+         url("../fonts/avenir_heavy-webfont.woff") format("woff");
+    font-weight: 700;
+    font-style: bold;
+    font-display: swap;
+}
+
+// Playfair
+@font-face {
+    font-family: "PlayFair";
+    src: url("../fonts/playfairdisplay-regular-webfont.woff2") format("woff2"),
+         url("../fonts/playfairdisplay-regular-webfont.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PlayFair";
+    src: url("../fonts/playfairdisplay-italic-webfont.woff2") format("woff2"),
+         url("../fonts/playfairdisplay-italic-webfont.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PlayFair";
+    src: url("../fonts/playfairdisplay-bold-webfont.woff2") format("woff2"),
+         url("../fonts/playfairdisplay-bold-webfont.woff") format("woff");
+    font-weight: 700;
+    font-style: bold;
+    font-display: swap;
+}
+
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

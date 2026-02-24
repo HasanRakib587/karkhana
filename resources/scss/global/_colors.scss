@@ -1,0 +1,15 @@
+$text-dark: #383532;
+$text-light: #FFFDFC;
+
+// $primary: #CFAA8A;
+$primary: #AE9375;
+$secondary: #faf0e6;
+:root{
+    --background-color: #{$secondary};
+    --text-color: #{$text-dark};
+}
+
+@mixin hex-to-rgba($hex-color, $opacity) {
+  background-color: $hex-color; // Fallback for browsers without rgba support
+  background-color: rgba($hex-color, $opacity);
+}
