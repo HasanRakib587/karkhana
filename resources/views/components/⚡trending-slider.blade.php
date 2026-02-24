@@ -39,7 +39,8 @@ new class extends Component {
                                             <h3 class="font-secondary fw-light card-title text-light">
                                                 {{ $featuredProduct->category->name }}
                                             </h3>
-                                            <a href="" class="text-light text-decoration-none">
+                                            <a href="{{ route('product.detail', $featuredProduct->slug) }}"
+                                                class="text-light text-decoration-none">
                                                 <h2 class="font-primary fw-bolder card-title">
                                                     {{ $featuredProduct->name }}
                                             </a>

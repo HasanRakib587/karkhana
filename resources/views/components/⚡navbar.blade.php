@@ -42,7 +42,7 @@ new class extends Component {
                 </div>
             @else
                 <div class="navbar-brand logo">
-                    <a href="">
+                    <a href="{{ route('home') }}">
                         <img class="img-fluid" src="{{ asset('/images/logo.svg') }}" alt="" />
                     </a>
                 </div>
@@ -105,18 +105,19 @@ new class extends Component {
             <ul class="nav nav-pills flex-column">
                 <li class="nav-item">
                     <a wire:navigate class="nav-link {{ request()->is('/') ? 'active' : '' }}" aria-current="page"
-                        href="">Home</a>
+                        href="{{ route('home') }}">Home</a>
                 </li>
                 <li class="nav-item">
                     <a wire:navigate class="nav-link {{ request()->is('products') ? 'active' : '' }}"
-                        href="">Products</a>
+                        href="{{ route('products.all') }}">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a wire:navigate class="nav-link {{ request()->is('cart') ? 'active' : '' }}" href="">Cart</a>
+                    <a wire:navigate class="nav-link {{ request()->is('cart') ? 'active' : '' }}"
+                        href="{{ route('cart.page') }}">Cart</a>
                 </li>
                 <li class="nav-item">
                     <a wire:navigate class="nav-link {{ request()->is('my-orders') ? 'active' : '' }}"
-                        href="">Profile</a>
+                        href="{{ route('my.orders') }}">Profile</a>
                 </li>
             </ul>
         </div>

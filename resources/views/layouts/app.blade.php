@@ -21,6 +21,7 @@
         {{-- Livewire pages --}}
         {{ $slot ?? '' }}
     </main>
+    <livewire:footer />
 
     @stack('scripts')
     @livewireScripts

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\SocialiteController;
 use App\Livewire\Pages\CartPage;
 use App\Livewire\Pages\CheckoutPage;
@@ -7,7 +8,6 @@ use App\Livewire\Pages\HomePage;
 use App\Livewire\Pages\LoginPage;
 use App\Livewire\Pages\MyOrderDetailsPage;
 use App\Livewire\Pages\MyOrdersPage;
-use App\Livewire\Pages\PageController;
 use App\Livewire\Pages\ProductDetailPage;
 use App\Livewire\Pages\ProductsPage;
 use App\Livewire\Pages\SuccessPage;
@@ -26,6 +26,8 @@ Route::controller(SocialiteController::class)->group(function () {
 });
 
 Route::get('/contact', [PageController::class, 'contactUs'])->name('contact.page');
+Route::post('/contact', [PageController::class, 'submitContact'])->name('contact.submit');
+
 Route::get('/privacy-policy', [PageController::class, 'privacy'])->name('privacy.page');
 Route::get('/terms-conditions', [PageController::class, 'termsConditions'])->name('terms.page');
 

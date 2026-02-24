@@ -7,7 +7,7 @@
     <livewire:trending-slider />
     <livewire:homeslider />
     <!-- About Section-->
-    <section id="about" class="bg-primary text-light py-5">
+    <section id="about" class="bg-primary text-light py-5 my-5">
         <div class="container px-5">
             <div class="row gx-5 justify-content-center">
                 <div class="col-xxl-8">
@@ -33,7 +33,6 @@
             </div>
         </div>
     </section>
-    <livewire:footer />
     @push('scripts')
         <script src="https://unpkg.com/gsap@3.12.5/dist/gsap.min.js"></script>
         <script src="https://unpkg.com/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>

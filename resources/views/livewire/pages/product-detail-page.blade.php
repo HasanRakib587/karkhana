@@ -156,8 +156,6 @@
     <!-- Shop Section -->
     <livewire:shop />
 
-    <livewire:footer />
-
     @push('scripts')
         <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
         <script src="{{ asset('js/main.js') }}"></script>

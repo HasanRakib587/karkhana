@@ -40,4 +40,9 @@ return [
         'redirect' => env('GOOGLE_CALLBACK_REDIRECTS'),
     ],
 
+    'recaptcha' => [
+        'key' => env('RECAPTCHA_SITE_KEY'),
+        'secret' => env('RECAPTCHA_SECRET_KEY'),
+    ],
+
 ];

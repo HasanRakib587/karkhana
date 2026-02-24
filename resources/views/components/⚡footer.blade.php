@@ -13,14 +13,17 @@ new class extends Component {
             <div class="col-md-8 text-light">
                 <ul class="list-unstyled">
                     <li>
-                        <a class="text-decoration-none text-secondary" href="">Contact</a>
+                        <a wire:navigate class="text-decoration-none text-secondary"
+                            href="{{ route('contact.page') }}">Contact</a>
                     </li>
                     <li>
-                        <a class="text-decoration-none text-secondary" href="">Privacy
+                        <a wire:navigate class="text-decoration-none text-secondary"
+                            href="{{ route('privacy.page') }}">Privacy
                             Policy</a>
                     </li>
                     <li>
-                        <a class="text-decoration-none text-secondary" href="">Terms &
+                        <a wire:navigate class="text-decoration-none text-secondary"
+                            href="{{ route('terms.page') }}">Terms &
                             Condition</a>
                     </li>
                 </ul>

@@ -27,7 +27,6 @@ class ProductsPage extends Component
         $total_count = CartManagement::addItemToCart($product_id);
 
         $this->dispatch('update-cart-count', $total_count);
-
         // LivewireAlert::title('Thank You !')
         //     ->text('Your Item is Added to the Cart')
         //     ->position('top-end')
