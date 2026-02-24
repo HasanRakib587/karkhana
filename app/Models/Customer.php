@@ -2,10 +2,10 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Support\Str;
 
-class Customer extends Model
+class Customer extends Authenticatable
 {
     protected $fillable = [
         'name',
@@ -15,6 +15,11 @@ class Customer extends Model
         'password',
         'google_id',
         'facebook_id',
+    ];
+
+    protected $hidden = [
+        'password',
+        'remember_token',
     ];
 
     public function orders()

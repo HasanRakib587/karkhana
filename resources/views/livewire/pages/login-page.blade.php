@@ -16,10 +16,11 @@
                             </div>
                         @endif
                         <div class="d-grid gap-2 mb-3">
-                            <a href="#" class="btn btn-social btn-google">
+                            <a href="{{ route('auth.redirection', 'google') }}" class="btn btn-social btn-google">
                                 <i class="bi bi-google me-2"></i> Sign in with Google
                             </a>
-                            <a href="#" class="btn btn-social btn-facebook disabled ">
+                            <a href="{{ route('auth.redirection', 'facebook') }}"
+                                class="btn btn-social btn-facebook disabled ">
                                 <i class="bi bi-facebook me-2"></i> Sign in with Facebook
                             </a>
                         </div>

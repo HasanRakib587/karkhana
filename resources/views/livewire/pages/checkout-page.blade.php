@@ -59,19 +59,19 @@
                                     <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>
-                            {{-- District --}}
+                            {{-- Location --}}
                             <div class="col-12">
-                                <label for="district" class="form-label">District</label>
-                                <select wire:model.live="district" id="district"
-                                    class="form-control @error('district') border-danger @enderror">
-                                    <option value="">-- Select District --</option>
-                                    <option value="insidedhaka">Inside Dhaka</option>
-                                    <option value="outsidedhaka">Outside Dhaka</option>
+                                <label for="location_type" class="form-label">Location</label>
+                                <select wire:model.live="location_type" id="location_type"
+                                    class="form-control @error('location_type') border-danger @enderror">
+                                    <option value="">-- Select Location --</option>
+                                    <option value="inside_dhaka">Inside Dhaka</option>
+                                    <option value="outside_dhaka">Outside Dhaka</option>
                                 </select>
-                                @error('district')
+                                @error('location_type')
                                     <div class="text-danger">{{ $message }}</div>
                                 @enderror
-                                @if ($district !== 'insidedhaka')
+                                @if ($location_type !== 'inside_dhaka')
                                     <div class="mt-4 alert alert-warning">
                                         <div class="card shadow-sm border-2">
                                             <div class="card-body">

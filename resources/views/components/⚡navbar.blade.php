@@ -58,12 +58,12 @@ new class extends Component {
                                 {{ auth('customer')->user()->name }}
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a wire:navigate class="dropdown-item" href="">My Orders</a>
+                                <li><a wire:navigate class="dropdown-item" href="{{ route('my.orders') }}">My Orders</a>
                                 </li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="">Logout</a></li>
+                                <li><a class="dropdown-item" href="{{ route('customer.logout') }}">Logout</a></li>
                             </ul>
                         </li>
                     @endauth
