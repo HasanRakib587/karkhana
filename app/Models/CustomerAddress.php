@@ -20,4 +20,15 @@ class CustomerAddress extends Model
     {
         return $this->belongsTo(Customer::class);
     }
+
+    protected static function booted()
+    {
+        static::saving(function ($address) {
+            if ($address->is_default) {
+                self::where('customer_id', $address->customer_id)
+                    ->where('id', '!=', $address->id)
+                    ->update(['is_default' => false]);
+            }
+        });
+    }
 }
