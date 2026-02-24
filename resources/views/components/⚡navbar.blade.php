@@ -69,7 +69,7 @@ new class extends Component {
                     @endauth
                     @guest('customer')
                         <li>
-                            <a wire:navigate href="" class="nav-link text-light position-relative">
+                            <a wire:navigate href="{{ route('login') }}" class="nav-link text-light position-relative">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
                                     <path fill="currentColor"
                                         d="M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4" />
@@ -78,7 +78,7 @@ new class extends Component {
                         </li>
                     @endguest
                     <li>
-                        <a wire:navigate href="" class="nav-link text-light position-relative">
+                        <a wire:navigate href="{{ route('cart.page') }}" class="nav-link text-light position-relative">
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                                 {{ $total_count }}

@@ -35,7 +35,7 @@
                             <img src="{{ asset('uploads/' . $product->images[0]) }}" class="card-img" alt="{{ $product->name }}">
                             <div
                                 class="card-img-overlay d-flex flex-column justify-content-end text-center bg-dark bg-opacity-50 p-3">
-                                <a href="" wire:navigate>
+                                <a href="{{ route('product.detail', $product->slug) }}" wire:navigate>
                                     <h5 class="font-primary fw-bold card-title">{{ $product->name }}</h5>
                                 </a>
                                 <p class="font-secondary fw-bolder card-text">
