@@ -21,7 +21,7 @@ class CustomerResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::UserGroup;
 
-    protected static ?string $recordTitleAttribute = 'Customers';
+    protected static ?string $recordTitleAttribute = 'name';
 
     public static function form(Schema $schema): Schema
     {
@@ -38,6 +38,11 @@ class CustomerResource extends Resource
         return [
             AddressesRelationManager::class,
         ];
+    }
+
+    public static function getGloballySearchableAttributes(): array
+    {
+        return ['name', 'phone', 'email'];
     }
 
     public static function getPages(): array

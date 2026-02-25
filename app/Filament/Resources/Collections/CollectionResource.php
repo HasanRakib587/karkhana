@@ -23,7 +23,7 @@ class CollectionResource extends Resource
 
     protected static string|UnitEnum|null $navigationGroup = 'Product Management';
 
-    protected static ?string $recordTitleAttribute = 'Collections';
+    protected static ?string $recordTitleAttribute = 'name';
 
     public static function form(Schema $schema): Schema
     {

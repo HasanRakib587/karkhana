@@ -20,7 +20,7 @@ class OrderResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::ShoppingBag;
 
-    protected static ?string $recordTitleAttribute = 'Orders';
+    // protected static ?string $recordTitleAttribute = 'name';
 
     public static function form(Schema $schema): Schema
     {
@@ -37,6 +37,11 @@ class OrderResource extends Resource
         return [
             //
         ];
+    }
+
+    public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::query()->where('status', 'new')->count();
     }
 
     public static function getPages(): array
