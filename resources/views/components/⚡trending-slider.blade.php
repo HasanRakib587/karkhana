@@ -30,8 +30,10 @@ new class extends Component {
                         <div class="card trending-card bg-primary text-light border-primary">
                             <div class="row g-0">
                                 <div class="col-6 col-md-5 order-1">
-                                    <img src="{{ asset('uploads/' . $featuredProduct->images[1]) }}"
-                                        class="card-img img-fluid rounded-start" alt="Pendant" />
+                                    @if (!empty($featuredProduct->images[0]))
+                                        <img src="{{ asset('uploads/' . $featuredProduct->images[0]) }}"
+                                            class="card-img img-fluid rounded-start" alt="{{ $featuredProduct->name }}" />
+                                    @endif
                                 </div>
                                 <div class="col-6 col-md-7">
                                     <div class="card-body d-flex flex-column">
