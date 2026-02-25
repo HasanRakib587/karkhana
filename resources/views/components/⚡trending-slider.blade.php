@@ -30,9 +30,11 @@ new class extends Component {
                         <div class="card trending-card bg-primary text-light border-primary">
                             <div class="row g-0">
                                 <div class="col-6 col-md-5 order-1">
-                                    @if (!empty($featuredProduct->images[0]))
-                                        <img src="{{ asset('uploads/' . $featuredProduct->images[0]) }}"
-                                            class="card-img img-fluid rounded-start" alt="{{ $featuredProduct->name }}" />
+                                    @php $image = data_get($featuredProduct->images, '0'); @endphp
+
+                                    @if ($image)
+                                        <img src="{{ asset('uploads/' . $image) }}" class="card-img img-fluid rounded-start"
+                                            alt="{{ $featuredProduct->name }}">
                                     @endif
                                 </div>
                                 <div class="col-6 col-md-7">

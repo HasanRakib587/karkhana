@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\SocialiteController;
+use App\Livewire\Pages\CancelPage;
 use App\Livewire\Pages\CartPage;
 use App\Livewire\Pages\CheckoutPage;
 use App\Livewire\Pages\HomePage;
@@ -46,4 +47,5 @@ Route::middleware('auth:customer')->group(function () {
     Route::get('/my-orders/{order_id}', MyOrderDetailsPage::class)->name('order.details');
 
     Route::get('/success', SuccessPage::class)->name('success');
+    Route::get('/cancelled', CancelPage::class)->name('cancelled');
 });
