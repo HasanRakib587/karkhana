@@ -1,0 +1,65 @@
+{
+  "resources/fonts/avenir_heavy-webfont.woff": {
+    "file": "assets/avenir_heavy-webfont-B14eJOsF.woff",
+    "src": "resources/fonts/avenir_heavy-webfont.woff"
+  },
+  "resources/fonts/avenir_heavy-webfont.woff2": {
+    "file": "assets/avenir_heavy-webfont-CdFerZij.woff2",
+    "src": "resources/fonts/avenir_heavy-webfont.woff2"
+  },
+  "resources/fonts/avenir_light-webfont.woff": {
+    "file": "assets/avenir_light-webfont-BB2emEr_.woff",
+    "src": "resources/fonts/avenir_light-webfont.woff"
+  },
+  "resources/fonts/avenir_light-webfont.woff2": {
+    "file": "assets/avenir_light-webfont-DCCWCE-7.woff2",
+    "src": "resources/fonts/avenir_light-webfont.woff2"
+  },
+  "resources/fonts/avenir_regular-webfont.woff": {
+    "file": "assets/avenir_regular-webfont-BvHMuETA.woff",
+    "src": "resources/fonts/avenir_regular-webfont.woff"
+  },
+  "resources/fonts/avenir_regular-webfont.woff2": {
+    "file": "assets/avenir_regular-webfont-w6R-Dpm3.woff2",
+    "src": "resources/fonts/avenir_regular-webfont.woff2"
+  },
+  "resources/fonts/playfairdisplay-bold-webfont.woff": {
+    "file": "assets/playfairdisplay-bold-webfont-MjY2eu3h.woff",
+    "src": "resources/fonts/playfairdisplay-bold-webfont.woff"
+  },
+  "resources/fonts/playfairdisplay-bold-webfont.woff2": {
+    "file": "assets/playfairdisplay-bold-webfont-BV7rkWHM.woff2",
+    "src": "resources/fonts/playfairdisplay-bold-webfont.woff2"
+  },
+  "resources/fonts/playfairdisplay-italic-webfont.woff": {
+    "file": "assets/playfairdisplay-italic-webfont-DOBlXE8F.woff",
+    "src": "resources/fonts/playfairdisplay-italic-webfont.woff"
+  },
+  "resources/fonts/playfairdisplay-italic-webfont.woff2": {
+    "file": "assets/playfairdisplay-italic-webfont-4Fr-aFMb.woff2",
+    "src": "resources/fonts/playfairdisplay-italic-webfont.woff2"
+  },
+  "resources/fonts/playfairdisplay-regular-webfont.woff": {
+    "file": "assets/playfairdisplay-regular-webfont-B4fD8Y9z.woff",
+    "src": "resources/fonts/playfairdisplay-regular-webfont.woff"
+  },
+  "resources/fonts/playfairdisplay-regular-webfont.woff2": {
+    "file": "assets/playfairdisplay-regular-webfont-Dv2RfSg9.woff2",
+    "src": "resources/fonts/playfairdisplay-regular-webfont.woff2"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-82v6EwEu.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/scss/main.scss": {
+    "file": "assets/main-DkjBhHhX.css",
+    "src": "resources/scss/main.scss",
+    "isEntry": true,
+    "name": "main",
+    "names": [
+      "main.css"
+    ]
+  }
+}
